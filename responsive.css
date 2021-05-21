@@ -149,27 +149,6 @@
     .proLink {
         padding: 0 10px;
     }
-    .upani{
-        animation-name : moveup ;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-        animation-direction: normal ;
-        cursor:default;
-    }
-    @keyframes moveup {
-        from {
-            background-color: transparent;
-            width: var(--swid);
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(var(--sx));
-            transition: smooth;
-            background-color: #141A1C;
-            height: 90vh;
-            width: 100vw;
-        }
-    }
 }
 
 

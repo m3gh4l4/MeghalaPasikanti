@@ -13,6 +13,9 @@ function typeWriter()
     }
 }
 
+document.addEventListener('backbutton', function() {
+    myFunction(0);
+})
 let r = document.querySelector(':root');
 let expanded = false;
 function myFunction(num)
@@ -38,6 +41,12 @@ function myFunction(num)
     //     console.log(document.getElementById('four').classList)
     //     console.log('no hope')
     // }
+    if(window.innerHeight < 800) {
+        r.style.setProperty('--height',window.innerHeight)
+    }
+    else{
+        r.style.setProperty('--height', '100vh')
+    }
     if(expanded)
     {
         expanded = false;
@@ -68,7 +77,7 @@ function myFunction(num)
     else {
         expanded = true;
         r.style.setProperty('--scroll', 'scroll')
-        r.style.setProperty('--height','100vh')
+        console.log(window.innerHeight)
         ele[0].classList.add("upani");
         elep[0].classList.add('outani')
         elep[0].classList.remove('inani')
