@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>My Portfolio</title>
+
+    <!-- loading links  -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" type="text\css"/>
+
+    <!-- adding font  -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Demo styles -->
+  <script>
+    function stoploading() {
+      setTimeout(() => {
+        preloader.style.display="none";
+        preloader.fadeOut="slow";
+        // preloader.style.transition="background 300ms ease-in 200ms" ;
+        typeWriter();
+      }, 1000);
+
+    }
+  </script>
+
+    <script src="main.js"></script>
+  </head>
+  
+  <body onload="stoploading()" style="scrollbar-width: 0;">
+    <div id="loader" 
+    style="width: 100%; 
+            height: 100%; 
+            background: black url('images/loading2.gif') no-repeat center; 
+            z-index: 10; 
+            position: fixed;
+            ">
+    </div>
+    <script type="text/javascript">
+      var preloader=document.getElementById('loader');
+      function stoploading() 
+      {
+        setTimeout(() => {
+          preloader.style.display="none";
+          typeWriter();
+          flexFont();
+        }, 1000);
+      }
+      </script>
+    <div class="container-fluid p-0">
+      
+      <header class="header">
+        <ul class="nav">
+          <li>
+            <div class="dropdown-res" >
+              <div class="dropdown-icon-res">
+                <a onclick="dropmenu()"><i class="fa fa-bars"></i></a>
+              </div>
+              <div class="dropdown-list-res" >
+                <ul class="bar-nav" >
+                  <li>
+                    <a href="#" onclick="gotoslide(5)" >About</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="gotoslide(1)" >Skills</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="gotoslide(2)"  >Projects</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="gotoslide(3)" >Extracurriculars</a>
+                  </li>
+                  <li >
+                    <a href="#" onclick="gotoslide(4)" >Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="name-header">
+            <img src="images/fullname-header.png" >
+          </li>
+          <li class="links">
+            <a href="#" onclick="gotoslide(5)">About</a>
+          </li>
+          <li class="links">
+            <a href="#" onclick="gotoslide(1)">Skills</a>
+          </li>
+          <li class="links">
+            <a href="#" onclick="gotoslide(2)" >Projects</a>
+          </li>
+          <li class="links">
+            <a href="#" onclick="gotoslide(3)">Extracurriculars</a>
+          </li>
+          <li class="links">
+            <a href="#" onclick="gotoslide(4)">Contact</a>
+          </li>
+        </ul>
+      </header>
+      
+      <div class="body">
+        <div class="text1">
+          <h4>Hey There !!</h4>
+        </div>
+        <div class="text2">
+          <h4>I' m</h4>
+          <img class="img-responsive" src="/images/name.png">
+        </div>
+        <div class="text3">
+          <h2 id="intro_text"></h2>
+        </div>
+      </div>
+        
+        <!-- Swiper -->
+
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            
+            <!-- slide one -->
+            <div class="swiper-slide one" id="one">
+              <a href="#" id="about" onclick="myFunction(1)" class="upwrap">
+                <img src="images/up pointer.png" width="25px" height="25px"  id="upone" >
+              </a>
+              <div class="titleWrapper">
+                <h1 class="slide-title">About</h1>
+              </div>
+              <div class="slide container slide-content">
+                <div class="aboutWrapper row">
+                  <div class="ppicWrapper">
+                    <img src="images/meghala.png" id="profilepic">
+                  </div>
+                  <div class="aboutDesc">Hello!! My name is <div class="myname">Meghala Pasikanti</div>. Currently I am pursuing btech in Computer Science Engineering at National Institute Of Technology , Warangal. Iam an enthusiast in learning new things. I find myself interested in almost everything in this world. Two of those interests are Web and App development. Been exploring these two fields and yeah these are quite interesting ^_^. Explore my website to know more about me.<span style="color: rgb(216, 210, 173);"> But hey, nice to meet you :)</span> </div>
+                  <div class="resumelink"><a href="./assets/Meghana_Pasikanti_resume.pdf" download="meghalaResume">download my resume</a></div>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <!-- slide two -->
+            <div class="swiper-slide two" id="two">
+              <a href="#" id="skills" onclick="myFunction(2)" class="upwrap">
+                <img src="images/up pointer.png" width="25px" height="25px"  id="uptwo"  >
+              </a>
+              <div class="titleWrapper">
+                <h1 class="slide-title">Skills</h1>
+              </div>
+              <div class="slide container">
+                <div class="skills-text">
+                  <h4>OMG There is so much to Learn <span style="color: yellow;">0_0</span></h4> 
+                </div>
+                <div class="skills-wrapper" >
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle c">
+                        <h1 class="skill-name">C</h1>
+                      </div>
+                      <div class="percentage">
+                        <span class="counter" data-target="70">0</span>%
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle cpp">
+                          <h1 class="skill-name">C++</h1>
+                      </div>
+                      <div class="percentage">
+                          <span class="counter" data-target="70">0</span>%
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle html">
+                        <h1 class="skill-name">HTML</h1>
+                      </div>
+                      <div class="percentage">
+                        <span class="counter" data-target="90">0</span>%
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle css">
+                        <h1 class="skill-name">CSS</h1>
+                      </div>
+                      <div class="percentage">
+                        <span class="counter" data-target="90">0</span>%
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle js">
+                        <h1 class="skill-name">JAVASCRIPT</h1>
+                      </div>
+                      <div class="percentage">
+                        <span class="counter" data-target="80">0</span>%
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle bootstrap">
+                        <h1 class="skill-name">BOOTSTRAP</h1>
+                      </div>
+                      <div class="percentage">
+                        <span class="counter" data-target="60">0</span>%
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle react">
+                        <h1 class="skill-name">REACT</h1>
+                      </div>
+                      <div class="percentage">
+                        <span class="counter" data-target="60">0</span>%
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="circle django">
+                        <h1 class="skill-name">Django</h1>
+                      </div>
+                      <div class="percentage">
+                        <span class="counter" data-target="50">0</span>%
+                      </div>
+                    </div>
+                  </div> 
+                  
+                </div>
+              </div>
+            </div>
+            <!-- slide three -->
+            <div class="swiper-slide three" id="three">
+              <a href="#" id="projects" onclick="myFunction(3)" class="upwrap">
+                <img src="images/up pointer.png" width="25px" height="25px"  id="upthree">
+              </a>
+              <div class="titleWrapper">
+                <h1 class="slide-title">projects</h1>
+              </div>
+              <div class="slide container slide-content">
+                <div class="protext" >All along this is what i have been up to.</div>
+                <div class="row" id="proWrapper">
+                
+                  <div class="proCard">
+                    <div class="cardWrapper">
+                      <div class="proTitle"><u>Portfolio Website</u></div>
+                      <div class="proDesc">Designed and Developed the responsive and interactive Website that you are watching now.</div>
+                      <div class="techUsed">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>BootStrap</span>
+                      </div>
+                      <div class="proLink"><a href="#">view documentation</a></div>
+                      <div class="proLink"><a href="#">get the website link</a></div>
+                    </div>
+                  </div>
+                  <div class="proCard">
+                    <div class="cardWrapper">
+                      <div class="proTitle"><u>Techniche Website</u></div>
+                      <div class="proDesc">Contributed to the Techniche Website as a part of WebOperations team.</div>
+                      <div class="techUsed">
+                        <span>django</span>
+                        <span>Javascript</span>
+                      </div>
+                      <div class="proLink"><a href="#">view documentation</a></div>
+                    </div>
+                  </div>
+                  <div class="proCard">
+                    <div class="cardWrapper">
+                      <div class="proTitle"><u>Techniche App</u></div>
+                      <div class="proDesc">Contributed to the Tehcniche App as a front end developer. The main aim of this app is to make the things easy for the participants and also visitors of Techniche, The annual techno management festival of IIT Guwahati. A user can register to various techniche events, view the complete details about every event, make</div>
+                      <div class="techUsed">
+                        <span>React native</span>
+                        <span>Firebase</span>
+                      </div>
+                      <div class="proLink"><a href="#">view documentation</a></div>
+                    </div>
+                  </div>
+                  <div class="proCard">
+                    <div class="cardWrapper">
+                      <div class="proTitle"><u>Quiz App</u></div>
+                      <div class="proDesc">Developed a quiz app on my path towards learning React Native. In this app a user can choose one of the themes present and can give a quiz of utmost 10 mcqs and finally their result will be given. </div>
+                      <div class="techUsed">
+                        <span>React Native</span>
+                      </div>
+                      <div class="proLink"><a href="#">view documentation</a></div>
+                    </div>
+                  </div>
+
+                </div>  
+              </div>
+            </div>
+            <!-- slide four -->
+            <div class="swiper-slide four" id="four">
+              <a href="#" id="extracurriculars" onclick="myFunction(4)" class="upwrap">
+                <img src="images/up pointer.png" width="25px" height="25px"  id="upfour">
+              </a>
+              <div class="titleWrapper">
+                <h1 class="slide-title">Extracurriculars</h1>
+              </div>
+              <div class="slide container slide-content">
+                <div class="artWrapper">
+                  <div class="arttag" id="tag">...Welcome to my ART world...</div>
+                  <div class="artdesc"><p>Art is one thing that i always loved doing in my free time. It's always been a kind of meditation for me, even from a very young age.</p></div>
+                  <div class="artinfo"><p>Here are some of my favourite arts. If u wish to view my whole gallery then slide through my instagram page <a href="https://www.instagram.com/artbymeghas_/" class="artlink" target="_blank">@artbymeghas_</a></p></div>
+                  <div class="galleryWrapper" id="gallery"> 
+                    <div class="gridRow">
+                      <div class="gridColumn" id="firstCol">
+                        <div class="imageContainer" >
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/krishna.jpg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CDvWFBABV6j/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/groom.jpg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CFeF8_BB8dA/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/godess.jpg" width="100%" >
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CBI2Ej2HFTQ/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        
+                      
+                      <div class="gridColumn" id="secondCol">
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/millie.jpg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CDYjM76BvGQ/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/AA.jpg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CDRdvjYhBzH/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/turban.jpg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CEZRAvFhM9I/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/buddha.jpg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CBr7kgMACqH/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="gridColumn" id="thirdCol">
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/babygirl.jpeg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CCGlATABiDp/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/customart.jpg" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CC6BDByBOT4/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imageContainer">
+                          <div class="imagepluscontent">
+                            <div class="imageWrapper">
+                              <img src="arts/sonusood.JPEG" width="100%">
+                            </div>
+                            <div class="hoverContent">
+                              <div><a href="https://www.instagram.com/p/CD5_H_1h2n0/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="gridColumn" id="secondColDuplicate">
+                      <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/millie.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="#">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/AA.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="https://www.instagram.com/p/CDRdvjYhBzH/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/turban.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="https://www.instagram.com/p/CEZRAvFhM9I/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/buddha.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="https://www.instagram.com/p/CBr7kgMACqH/?utm_source=ig_web_copy_link" target="_blank">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gridColumn" id="fourthCol">
+                      <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/bride.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="#">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/suriya.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="#">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/krishna2.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="#">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="imageContainer">
+                        <div class="imagepluscontent">
+                          <div class="imageWrapper">
+                            <img src="arts/customart2.jpg" width="100%">
+                          </div>
+                          <div class="hoverContent">
+                            <div><a href="#">View on Instagram</a></div>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                   
+
+                    </div>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          
+          
+            <!-- slide five -->
+            <div class="swiper-slide five" id="five">
+              <a href="#" id="contact" onclick="myFunction(5)" class="upwrap">
+                <img src="images/up pointer.png" width="25px" height="25px"  id="upfive" >
+              </a>
+              <div class="titleWrapper">
+                <h1 class="slide-title">Contact</h1>
+              </div>
+              <div class="slide container">
+                <div class="contact-container">
+                  <div class="fullName-wrapper">
+                    <img src="/images/fullname4.png" id="fullname" >
+                  </div>
+                  <div class="contact-text-wrapper">
+                    <p id="contact-text">Have created accounts on multiple platforms.<br>Slide into any one to contact me. Will try to reply as soon as possible.<br>By the way , I like twitter the most, what about you ?</p>
+                  </div>
+                  <div class="contact-links-wrapper">
+                    <div class="link-wrapper" style="width: 10%; height: auto;">
+                      <a href="#" class="link-icon" ><img src="images/gmail.svg"></a>
+                    </div>
+                    <div class="link-wrapper" style="width: 10%; height: auto;">
+                      <a href="#" class="link-icon" ><img src="images/linkedin.svg"></a>
+                    </div>
+                    <div class="link-wrapper" style="width: 10%; height: auto;">
+                      <a href="#" class="link-icon" ><img src="images/github.png" ></a>
+                    </div>
+                    <div class="link-wrapper" style="width: 10%; height: auto;">
+                      <a href="#" class="link-icon" ><img src="images/twitter.svg"></a>
+                    </div>
+                    <div class="link-wrapper" style="width: 10%; height: auto;">
+                      <a href="#" class="link-icon" ><img src="images/instagram.svg"></a>
+                    </div>
+                    <div class="link-wrapper" style="width: 10%; height: auto;">
+                      <a href="#" class="link-icon" ><img src="images/facebook.svg"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <script src="main.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animation.css" type="text/css"> 
+    <link rel="stylesheet" href="responsive.css" type="text/css">
+
+    <!-- Initialize Swiper -->
+    <script type="text/javascript">
+      let swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 85,
+        loopedSlides : 5,
+        centeredSlides: true,
+        loop :true,
+        grabCursor: true,
+        allowSlidePrev:true,
+        allowSlideNext : true,
+        breakpoints : {
+          320 : {
+            spaceBetween:30,
+            // slidesPerView :1.2,
+          },
+          600 : {
+            spaceBetween: 30,
+            // slidesPerView : 1.3,
+          },
+          900 : {
+            spaceBetween : 50,
+            // slidesPerView:1.5,
+          },
+          1200 : {
+            spaceBetween : 85,
+            slidesPerView : "auto",
+          }
+        }
+      });
+      function gotoslide(ind)
+      {
+        swiper.slideTo(ind,1000,true);
+      }
+
+    </script>
+  </body>
+</html>

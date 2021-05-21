@@ -1,0 +1,376 @@
+@media screen and (max-width:1100px) {
+    .nav > .name-header > img {
+        margin-left: -10px;
+    }
+    
+    .percentage , .counter{
+        font-size: 2vw;
+    }
+    #secondCol {
+        display: none;
+    }
+    #secondColDuplicate {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    #fourthCol {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .gridColumn {
+        flex: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .artdesc, .artinfo {
+        width: 80%;
+    }
+    /* .protext {
+        font-size: 2.5vw;
+    } */
+}
+
+@media screen and (max-width:950px) and (min-width:890px) {
+    :root {
+        --clr:white;
+    }
+}
+
+
+@media screen and (max-width:950px) and (min-width : 710px){
+    .nav > li > a {
+        font-size: 2.5vw;
+        color: white;
+        font-weight: normal;
+    }
+    .nav > .name-header > img{
+        height: 40px;
+        width: auto;
+        padding: 0px;
+        margin: 1vw 0;
+    }
+    .text3  {
+        border-right: transparent;
+        margin: 10px 20px;
+        
+    }
+    .text3 > #intro-text {
+        border-color: transparent;
+    }
+    .text2 > img {
+        margin-top: 10px;
+    }
+    :root {
+        --clr:transparent;
+        --fnt : 3.5vw;
+        --swid : 60vw;
+        --sx:-20vw;
+        --w:10vw;
+    }
+    .link-icon {
+        font-size: 250%;
+    }
+    .contact-links-wrapper {
+        margin: 3% 5%;
+    }
+    .percentage {
+        font-size: 2vw;
+    }
+    .skills-text > h4 {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .link-wrapper {
+        margin: 2% 2%;
+        padding-bottom: 7%;
+    }
+    .fullName-wrapper {
+        width: 80%;
+    }
+    :root {
+        --w:12vw;
+    }
+    .percentage , .counter{
+        font-size: 2.5vw;
+    }
+    .gridColumn {
+        flex: 100%;
+        padding: 0 10%;
+    }
+    #fourthCol {
+        display: none;
+    }
+    #secondColDuplicate {
+        display: none;
+    }
+    #secondCol {
+        display: flex;
+    }
+    div, h1, h2, h3, h4, h5 ,h6, p, a, span{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .aboutDesc {
+        font-weight: 500;
+        font-size: 18px;    
+    }
+    .aboutWrapper .resumelink {
+        padding: 6px 8px;
+        font-weight: 500;
+        font-size: 18px;  
+    }
+    .aboutWrapper .resumelink > a{
+        font-size: 3vw;
+    }
+    .myname {
+        font-size: 120%;
+    }
+    .link-icon img{
+        width: 75%;
+        
+    }
+    #contact-text {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .proCard {
+        flex: 100%;
+        padding: 0 5%;
+    }
+    .proTitle {
+        font-size: 150%;
+    }
+    .techUsed span {
+        font-size: 80%;
+    }
+    .proLink {
+        padding: 0 10px;
+    }
+}
+
+
+
+@media screen and (max-width:710px) {
+    .links {
+        display: none;
+    }
+    .header .nav {
+        justify-content: space-between;
+    }
+    .name-header{
+        margin-right: 25vw;
+    }
+    .dropdown-res {
+        display: block;
+        width: 100%;
+        margin-left: 20px;
+        z-index: 2;
+    }
+    .dropdown-res > button {
+        background-color: transparent;
+    }
+    .fa-bars {
+        font-size: 7vw;
+        color: white;
+    }
+    .dropdown-icon-res {
+        color: rgb(44, 41, 41);
+        opacity: 0.2;
+    }
+    .dropdown-list-res{
+        display: none;
+        transform: translateZ(100px);
+        visibility: hidden;
+        background-color: rgb(27, 34, 39);
+        opacity: 1;
+    }
+    .dropdown-list-res a{
+        display: block;
+        text-decoration: none;
+        text-shadow: none;
+        margin: 2%;
+        color: white;
+        width: auto;
+        contain: content;
+        font-size: 20px;
+        white-space: pre-wrap;
+        overflow:hidden;
+        padding: 0px 10px;
+        z-index: 19;
+    }
+    .dropdown-list-res a:active{
+        background-color: rgb(61, 67, 75);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .text3  {
+        border-right: transparent;
+        margin: 10px 20px;
+    }
+    .text3 > h2 {
+        font-size: 10px;
+        border-color: transparent;
+    }
+    .text2 > img {
+        margin-top: 1vw;
+        width: 60%;
+    }
+    .body > div {
+        padding-top: 10px;
+    }
+    :root {
+        --clr:transparent;
+        --fnt:4vw;
+        --swid:70vw;
+        --sx:-15vw;
+        --w:13vw;
+    }
+    .body {
+        padding-top: 10vw;
+    }
+    .percentage ,.counter {
+        font-size: 3vw;
+    }
+    .skills-text > h4{
+        font-size: 100%;
+    }
+    #contact-text {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .header .nav {
+        justify-content: space-around;
+    }
+    .name-header{
+        margin-right: 0;
+        margin-left: 0;
+        height: 11vh;
+    }
+    .dropdown-res {
+        margin-left: 0;
+        
+    }
+    .text1 >h4 {
+        font-size: 6vw;
+    }
+    .text2 > h4 {
+        font-size: 6vw;
+    }
+    :root {
+        --fnt:5vw;
+        --swid : 80vw;
+        --sx:-10vw;
+        --w:16vw;
+    }
+    #contact-text {
+        font-size: 25px;
+    }
+    .link-wrapper {
+        margin: 2% 2%;
+    }
+    .skills-wrapper > .row  {
+        margin:0 ;
+    }
+    .skills-text >h4 {
+        font-size: 100% ;
+    }
+    .skills-wrapper > .row > .col-md-3,.col-sm-6,.col-xs-12 {
+        flex: 29%;
+    }
+    .circle {
+        width: 17vw;
+        height: 17vw;
+    }
+    .aboutDesc {
+        font-size: 100%;
+    }
+    .aboutWrapper .resumelink > a{
+        font-size: 4vw;
+    }
+    .fullName-wrapper {
+        width: 100%;
+    }
+    .link-icon {
+        font-size: 150%;
+    }
+    .skill-name {
+        font-size: 10vw;
+        font-weight: 900;
+    }
+    .hoverContent div{
+        width: 80%;
+    }
+    .hoverContent div a{
+        padding: 0 10px;
+    }
+    .proTitle{
+        font-size: 125%;
+    }
+    .proDesc{
+        font-size: 80%;
+    }
+    .techUsed span{
+        font-size: 70%;
+    }
+    .proLink a:hover {
+        z-index: 2;
+        animation: hover 0.5s forwards;
+    }
+    @keyframes hover {
+        from {
+            font-size: 100%;
+        }
+        to {
+            font-size: 120%;
+        }
+    }
+    .artdesc, .artinfo{
+        font-size: 75%;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .nav > .name-header >img {
+        margin: 1vw 2vw;
+        height: 15vw;
+    }
+    .text2 > img {
+        margin-top: 1vw;
+        width: 70%;
+    }
+    :root {
+        --swid : 90vw;
+        --sx:-5vw;
+    }
+    .skills-text >h4 {
+        font-size: 100% ;
+    }
+    .link-wrapper {
+        margin: 2% 2%;
+    }
+    .contact-links-wrapper {
+        align-self: center;
+        margin: 2% 3%;
+    }
+    .link-icon {
+        font-size: 125%;
+    }
+    #contact-text {
+        font-size: 18px;
+    }
+    .proTitle {
+        font-size: 100%;
+    }
+    .hoverContent div a{
+        font-size: 90%;
+        padding: 2px;
+    }
+}

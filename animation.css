@@ -1,0 +1,101 @@
+:root{
+    --top : 0;
+    --height : 40vh;
+    --sx:-25vw;
+    --swid:50vw;
+}
+
+
+.upani{
+    animation-name : moveup ;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal ;
+    cursor:default;
+}
+@keyframes moveup {
+    from {
+        background-color: transparent;
+        width: var(--swid);
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(var(--sx));
+        transition: smooth;
+        background-color: #141A1C;
+        height: var(--height);
+        width: 100vw;
+    }
+}
+
+.upani > .upwrap > img {
+    animation: rotate 0.5s forwards;
+}
+.upani .slide-title {
+    color: white;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+.downani {
+    animation-name: movedown;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown {
+    from {
+        background-color: #141A1C;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(var(--sx));
+    }
+    to {
+        background-color: transparent;
+        height: 40vh;
+        width: var(--swid);
+        transform: translateX(0);
+        overflow: hidden;
+    }
+}
+
+.downani > .upwrap > img {
+    animation: revRotate 0.5s forwards;
+}
+@keyframes revRotate {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+.outani {
+    animation: moveout 0.5s forwards;
+}
+@keyframes moveout {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-25vw);
+        
+    }
+}
+
+.inani {
+    animation: movein 0.5s forwards;
+
+}
+@keyframes movein {
+    from{
+        transform: translateX(-25vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
