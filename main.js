@@ -13,9 +13,6 @@ function typeWriter()
     }
 }
 
-document.addEventListener('backbutton', function() {
-    myFunction(0);
-})
 let r = document.querySelector(':root');
 let expanded = false;
 function myFunction(num)
@@ -24,29 +21,13 @@ function myFunction(num)
     document.getElementsByClassName('dropdown-list-res')[0].style.display="none";
     let ele = document.getElementsByClassName("swiper-slide-active");
     let elep=document.getElementsByClassName("swiper-slide-prev");
-    // window.onresize = function() {
-    //     expanded = true;
-    //     document.getElementsByClassName('swiper-slide-active')[0].classList.add('center')
-    //     myFunction(0)
-    // }
-    // if(document.getElementById('four').classList.contains('swiper-slide-active') || document.getElementById('four').classList.contains('swiper-slide-duplicate-active')) {
-    //     console.log(document.getElementById('four').classList)
-    //     console.log('hope')
-    //     console.log(document.getElementsByClassName('container')[3].childNodes)
-    //     setTimeout(() => {
-    //         document.getElementById('tag').classList.add('arttagani')
-    //     }, 1000);
-    // }
-    // else {
-    //     console.log(document.getElementById('four').classList)
-    //     console.log('no hope')
-    // }
-    if(window.innerHeight < 800) {
-        r.style.setProperty('--height',window.innerHeight)
+    if(window.innerWidth < 600)
+    {
+        r.style.setProperty('--ptop', '56px');
     }
-    else{
-        r.style.setProperty('--height', '100vh')
-    }
+    else
+        r.style.setProperty('--ptop', '0px');
+    
     if(expanded)
     {
         expanded = false;
@@ -167,8 +148,8 @@ function dropmenu()
     let ele=document.getElementsByClassName('dropdown-list-res');
     if(ele[0].style.display!="none" && ele[0].style.display!="")
     {
-        console.log("if")
         ele[0].style.display="none";
+        document.getElementsByClassName('dropdown-icon-res')[0].style.opacity=0.7;
     }
     else
     {
@@ -176,5 +157,17 @@ function dropmenu()
         ele[0].style.visibility = 'visible';
         ele[0].style.position="fixed";
         ele[0].style.boxShadow="0px 8px 16px 0px rgba(0,0,0,0.8)";
+        document.getElementsByClassName('dropdown-icon-res')[0].style.opacity=0.9;
+    }
+}
+function clickedbody(e) 
+{
+
+    var target=e.srcElement || e.target;
+    if(target.className!="fa fa-bars" && target.className!="menitem")
+    {
+        let ele=document.getElementsByClassName('dropdown-list-res');
+        ele[0].style.display="none";
+        document.getElementsByClassName('dropdown-icon-res')[0].style.opacity=0.7;
     }
 }

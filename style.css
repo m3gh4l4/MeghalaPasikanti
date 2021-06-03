@@ -470,6 +470,15 @@ body {
     border-radius: 99px;
     background-color: rgb(103, 131, 114);
 }
+.soon{
+    font-size: 20px;
+    color: orange;
+    margin-top: 10px;
+    /* background-color: rgb(103, 131, 114); */
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
 .proLink a{
     text-align: center;
     text-decoration: none;

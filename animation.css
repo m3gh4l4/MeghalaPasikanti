@@ -3,6 +3,7 @@
     --height : 40vh;
     --sx:-25vw;
     --swid:50vw;
+    --ptop: 0px;
 }
 
 
@@ -26,6 +27,7 @@
         background-color: #141A1C;
         height: 100vh;
         width: 100vw;
+        padding-top: var(--ptop);
     }
 }
 .upani > .upwrap > img {
@@ -53,6 +55,7 @@
         width: 100vw;
         height: 100vh;
         transform: translateX(var(--sx));
+        padding-top: var(--ptop);
     }
     to {
         background-color: transparent;
@@ -60,6 +63,7 @@
         width: var(--swid);
         transform: translateX(0);
         overflow: hidden;
+        padding-top: 0px;
     }
 }
 
