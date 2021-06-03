@@ -649,7 +649,7 @@ body {
     position:inherit ;
 }
 .counter,.percentage {
-    color: #476e80;
+    color: #b6bcc0;
     font-size: 1.5vw;
 }
 .circleani::before {
