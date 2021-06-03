@@ -187,6 +187,10 @@
         background-color: rgb(27, 34, 39);
         opacity: 1;
     }
+    .bar-nav {
+
+        list-style-type:none;
+    }
     .dropdown-list-res a{
         display: block;
         text-decoration: none;
@@ -248,9 +252,9 @@
         justify-content: space-around;
     }
     .name-header{
-        margin-right: 0;
-        margin-left: 0;
         height: 11vh;
+        margin: 0 auto;
+        
     }
     .dropdown-res {
         margin-left: 0;
