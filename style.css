@@ -489,7 +489,7 @@ body {
 }
 .proLink a:hover {
     z-index: 2;
-    animation: hover 0.5s forwards;
+    /* animation: hover 0.5s forwards; */
 }
 @keyframes hover {
     from {
@@ -573,7 +573,7 @@ body {
 }
 
 .aboutWrapper > div > a:hover {
-    animation: expand 1s forwards;
+    /* animation: expand 1s forwards; */
 }
 
 @keyframes expand {

@@ -1,7 +1,7 @@
 
 let speed=150;
 let i=0;
-let text="Welcome to my world. Have a nice day :) ";
+let text="Welcome to my world. Have a nice day.";
 
 function typeWriter() 
 {
